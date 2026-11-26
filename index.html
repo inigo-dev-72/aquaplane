@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#071b35">
+  <meta name="description" content="Aquaplane: juego arcade retro de lancha y esquí acuático">
+
+  <title>Aquaplane - Retro Arcade</title>
+
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="shell">
+
+    <header>
+      <div class="brand">
+        AQUAPLANE
+        <span>1983 · RETRO ARCADE</span>
+      </div>
+
+      <div class="top-actions">
+        <button id="soundBtn" class="small-btn">
+          SONIDO: ON
+        </button>
+
+        <button id="installBtn" class="small-btn" hidden>
+          INSTALAR
+        </button>
+      </div>
+    </header>
+
+    <section class="game-wrap">
+
+      <canvas
+        id="game"
+        width="800"
+        height="480"
+        aria-label="Juego Aquaplane">
+      </canvas>
+
+      <div class="overlay" id="overlay">
+        <div class="panel">
+
+          <p class="eyebrow">ZX SPECTRUM INSPIRED</p>
+
+          <h1 id="overlayTitle">AQUAPLANE</h1>
+
+          <p id="overlayText">
+            Esquiva las rocas y los tiburones.
+            ¡No pierdas al esquiador!
+          </p>
+
+          <button id="startBtn" class="primary">
+            EMPEZAR
+          </button>
+
+          <p class="help">
+            ↑ / ↓ para moverte · ESPACIO para acelerar
+          </p>
+
+        </div>
+      </div>
+
+    </section>
+
+    <section class="controls">
+
+      <div class="touch-pad">
+        <button data-control="up">▲</button>
+        <button data-control="down">▼</button>
+      </div>
+
+      <button id="throttle" class="throttle">
+        ACELERAR ▶
+      </button>
+
+      <div class="hint">
+        Teclado: ↑ ↓ y mantener ESPACIO
+      </div>
+
+    </section>
+
+    <footer>
+      <span>
+        Récord: <b id="best">0</b>
+      </span>
+
+      <span>
+        Juego retro · Funciona sin conexión
+      </span>
+    </footer>
+
+  </main>
+
+  <script src="game.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+
+{
+  "name": "Aquaplane Retro",
+  "short_name": "Aquaplane",
+  "description": "Juego arcade retro de lancha y esquí acuático",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#071323",
+  "theme_color": "#071b35",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
